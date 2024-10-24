@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <script>
+
+ 
+        // عند تحميل الصفحة، يتم إعادة توجيه المستخدم إلى الصفحة الرئيسية
+        window.onload = function() {
+            if (!sessionStorage.getItem("visitedFirstPage")) {
+                // إعادة التوجيه إلى الصفحة الأولى إذا لم تتم زيارتها
+                window.location.href = "index.html";
+            }
+            
+            // window.location.href = "index.html";
+            // if (!localStorage.getItem("visitedFirstPage")) {
+            //     window.location.href = "index.html"; // إعادة التوجيه إلى الصفحة الأولى
+            // }
+            // ---------------------------
+            // تحقق مما إذا كانت الصفحة قد تم إعادة تحميلها
+            if (performance.navigation.type === 1) {
+                window.location.href = "index.html"; // إعادة التوجيه إلى الصفحة الأولى
+            }
+        };
+    </script>
+</head>
+<body>
+    <!-- <audio controls loop muted>
+        <source src="audio.mp3" type="audio/mp3">
+        <source src="audio.wav" type="audio/wav">
+        <source src="audio.ogg" type="audio/ogg">
+        there are some errors
+    </audio> -->
+    <p id="p3">
+      <video controls width="20%" poster="icon.jpg" preload="metadata" loop muted autoplay>
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.webm" type="video/webm">
+        <source src="video.ogg" type="video/ogg">
+        <track src="" kind="subtitles" label="arabic">
+        <track src="" kind="subtitles" label="english">
+     </video> 
+     </p>
+</body>
+</html>

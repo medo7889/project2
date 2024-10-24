@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Afify</title>
+    <link rel="icon" href="j2.jpg">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/24be5c99fc.js"   crossorigin="anonymous"></script>
+
+    <script>
+        // عند تحميل الصفحة الأولى، يتم تخزين علامة تدل على زيارتها
+        window.onload = function() {
+            sessionStorage.setItem("visitedFirstPage", "true"); // استخدام sessionStorage لتتبع الزيارة
+        };
+    </script>
+
+    <!-- <script>
+        // عند تحميل الصفحة الأولى، يتم وضع علامة في localStorage
+        window.onload = function() {
+            localStorage.setItem("visitedFirstPage", "true");
+        };
+    </script> -->
+</head>
+<body>
+    <div class="parent">
+
+        <div class="child1">
+
+            <div class="profile">
+                <img class="profile" src="12.jpg" alt="profile">
+                <p class="p0">Free Palestine</p>
+            </div>
+            <ul class="u1">
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                       <i class="fa-solid fa-bell"></i>
+                       <span>Notidication</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-brands fa-youtube"></i>
+                        <span>Watch</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-user-group"></i>
+                        <span>Groups</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>setting</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+
+
+        <div class="child2">
+            <form action="form.html">
+                <fieldset>
+                    <legend> login form </legend>
+                    <label for="name">username</label><br>
+                    <input type="text" name="username" id="name" placeholder=" enter username" required><br>
+                    <label for="pass">password</label><br>
+                    <input type="password" name="pass" id="pass" placeholder=" enter password" required><br><br>
+                    <input type="submit" name="" id="" value="login">
+                    <input type="reset" name="" id="">
+                   
+                    <!-- <button type="button" onclick="alert('section18')">click here</button> -->
+                   </fieldset><br><br>
+             </form>
+        </div>
+
+
+        <div class="child3">
+            <ul class="u2">
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>CALL TODAY</p><p>+1(234)56789</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>ADDRESS</p><p>Mit Ghamr</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>EMAIL</p>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-google"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>OPENING HOURS</p><p>Mon-fri 10:00-23:00</p>
+                    </a>
+                </li>
+            </ul>
+
+
+
+        </div>
+
+
+    </div>
+</body>
+</html>
